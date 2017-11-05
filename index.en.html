@@ -1,0 +1,713 @@
+<html lang="fr">
+<head>
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>University Rowing - Regataiades Internationales de Nantes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600' rel='stylesheet' type='text/css'>
+    <style>
+    h2 {
+      font-weight: 100;
+      font-style: normal;
+      font-size: 30px;
+    }
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: Lato, Helvetica;
+      }
+      .top-content {
+        background-image: url('images/bg-005.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 55%);
+      }
+
+      .part-2 {
+        background-image: url('images/pics/proc/mythical-2-03.png');
+      }
+      .part-3 {
+        background-image: url('images/pics/proc/registration-01.png');
+      }
+      .part-4 {
+        background-image: url('images/pics/proc/hosting-02.png');
+      }
+      .part-5 {
+        background-image: url('images/pics/proc/end-02.png');
+      }
+      .top-content,
+      .part-2,
+      .part-3,
+      .part-4,
+      .part-5 {
+        background-repeat: no-repeat;
+        background-position:  center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-size: 100% ;
+        width:100%;
+        height: 100%;
+        display: flex;
+      }
+      .top-content {
+        align-items: center;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .part-2,
+      .part-3,
+      .part-4,
+      .part-5 {
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .header {
+        margin: -40px;
+        float: left;
+        clear:none;
+
+      }
+      .header-img {
+        display: block;
+        text-align: right;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+      }
+      h1 {
+        font-variant: small-caps;
+      }
+      .top-content .label {
+        color:rgba(211, 255, 255, 1);
+        background: rgba(104, 141, 157, 0.9);
+        border-top: rgba(230, 255, 255, 1) solid 1px;
+        border-bottom: rgba(230, 255, 255, 1) solid 1px;
+      }
+
+      .part-2 .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(255, 255, 255, 0.9);
+        border-top: rgba(241, 161, 88, 1) solid 1px;
+        border-bottom: rgba(241, 161, 88, 1) solid 1px;
+      }
+
+      .part-3 .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(202, 207, 218, 0.9);
+        border-top: rgba(0, 0, 0, 1) solid 1px;
+        border-bottom: rgba(0, 0, 0, 1) solid 1px;
+      }
+
+      .part-4 .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(186, 216, 185, 0.9);
+        border-top: rgba(81, 133, 77, 1) solid 1px;
+        border-bottom: rgba(81, 133, 77, 1) solid 1px;
+      }
+
+      .part-5 .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(219, 233, 230, 0.9);
+        border-top: rgba(0, 134, 0, 1) solid 1px;
+        border-bottom: rgba(0, 134, 0, 1) solid 1px;
+      }
+      .top-content .label{
+        margin-top:40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .part .label{
+        margin-top:50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .label{
+        width: 100%;
+        font-weight: 100;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .label h1 {
+        letter-spacing: 10px;
+        font-size: 240%;
+        font-weight: 100;
+      }
+      .label h2 {
+        margin-top: 20px;
+        font-size: 180%;
+        font-weight: 100;
+      }
+      .label h3 {
+        margin-top: 20px;
+        font-size: 150%;
+        font-weight: 100;
+      }
+
+      .part .label h2 {
+        letter-spacing: 3px;
+        font-size: 220%;
+        font-weight: 300;
+      }
+      .part .label ul {
+        margin: 0px;
+        padding: 0px;
+      }
+      .part .label li {
+        margin-top: 20px;
+        list-style: none;
+        font-size: 150%;
+        padding: 10px 0px 0px 0px;
+        margin: 0px;
+        font-weight: 300;
+      }
+      .header ul {
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+      .header ul li {
+        float: left;
+        list-style: none;
+        font-size: 140%;
+        padding: 40px 20px 20px 20px;
+        font-variant: small-caps;
+        max-height: 80px;
+      }
+      .header ul li a {
+        color:rgba(104, 141, 157, 1);
+        text-decoration: none;
+        font-weight: 300;
+        font-variant: small-caps;
+      }
+      .content {
+        padding:40px;
+        margin-top: -40px;
+        margin-bottom: -40px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40px, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 0) 100%);
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: auto;
+        width: 100%;
+        min-height: 100%;
+      }
+      .content .page {
+        width: 100%;
+        font-weight: 300;
+        padding: 60px 0px 60px 0px;
+      }
+      .content h1 {
+        margin: 60px 0px 60px 0px;
+        font-weight: 100;
+        font-size: 260%;
+        text-align: center;
+        text-transform: uppercase;
+          color: rgba(104, 141, 157, 1);
+      }
+      .content h4 {
+        color: rgba(104, 141, 157, 1);
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .content .row{
+        margin-top:40px;
+      }
+      .content .time{
+        font-weight: bold;
+        margin-right: 10px;
+      }
+       .social a i {
+        font-size: 40px;
+        color:#000;
+        margin: 0 5px;
+        text-decoration: none;
+      }
+       .social
+      {
+        margin-top: 40px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 500px) {
+        .header-img img {
+          width: 250px;
+
+        }
+        .part .label h2,
+        .top-content h1 {
+          letter-spacing: 2px;
+          font-size: 120%;
+        }
+        .part .label li {
+          font-size: 90%;
+        }
+        .header {
+          margin: -20px;
+        }
+        .header ul li {
+          font-size: 80%;
+          padding: 40px 10px 10px 10px;
+        }
+
+        .top-content {
+          background-image: url('images/bg-005-mob.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(211, 255, 255, 1) 55%);
+        }
+        .part-2 {
+          background-image: url('images/pics/proc/mythical-2-03-mob.png');
+        }
+        .part-3 {
+          background-image: url('images/pics/proc/registration-01-mob.png');
+        }
+        .part-4 {
+          background-image: url('images/pics/proc/hosting-02-mob.png');
+        }
+        .part-5 {
+          background-image: url('images/pics/proc/end-02-mob.png');
+        }
+        .top-content{
+          background-position:  center top;
+          background-attachment: scroll;
+        }
+        .part-2,
+        .part-3,
+        .part-4,
+        .part-5 {
+          background-position:  center 0px;
+          background-attachment: scroll;
+        }
+        .top-content {
+          align-items: center;
+          align-content: flex-start;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+        .part-2,
+        .part-3,
+        .part-4,
+        .part-5 {
+          align-items: center;
+          align-content: center;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+
+        .content {
+          padding: 20px;
+          margin-top: -20px;
+          margin-bottom: -20px;
+          background: none;
+        }
+        .content h1{
+          font-size: 160%;
+        }
+        .content .page {
+          padding: 30px 0px 30px 0px;
+        }
+        .content h1 {
+          margin: 30px 0px 30px 0px;
+        }
+        .content h4 {
+          font-size: 110%;
+        }
+        .part .label h3 {
+          margin-top: 10px;
+          font-size: 110%;
+          font-weight: 100;
+        }
+        .part .label {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="top-content">
+      <div class="header-img">
+      <img src="images/Logo-RIDN-2012-noir.png" width="350px"></div>
+      <div class="header">
+        <ul>
+          <!-- <li class="live"><a href="/live/fr">En direct</a></li> -->
+          <li><a href="#regatta">Presentation</a></li>
+          <!--<li><a href="#teams">Equipes engagées</a></li>-->
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="label"><h1>International University Rowing Regatta </h1><h2>XXXIV Edition</h2><h3>Nantes, May 5 and 6, 2018</h3></div>
+      <div></div>
+    </div>
+
+    <div class="content">
+      <div id="regatta" class="page">
+        <h1>Presentation</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Races</h4>
+            <ul>
+              <li>Saturday, May 5th: 1000m races.</li>
+              <li>Sunday, May 6th: 500m sprints.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>University Events</h4>
+            <ul>
+              <li>Coxed eight (M8+ et W8+)</li>
+              <li>Quadruple scull (M4x et W4x)</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Masters Events</h4>
+            <ul>
+              <li>Men four (MM4+)</li>
+              <li>Women quadruple scull (MD4x)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Reception</h4>
+              <p>Starting from Friday, May 4th.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Transport and accomodation</h4>
+              <p>We are working on special offers with our partners. Stay tuned.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Boat rentals</h4>
+              <p>You are expected to come with your own equipment. If the logistics is not possible, you can contact us. There is no garantees that we will be able to privide you with a boat, but we will try to find a solution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info"
+                id="callout-helper-context-color-specificity">
+                <h4>Fees</h4>
+                <p>Fees information will be available soon.</p>
+              </div>
+            </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Food</h4>
+              <p>Our partner, University Cafeteria, offers lunches on Saturday and Sunday as well as dinner on Saturday.</p>
+              <p>Pricing and booking will be available soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="part-2 part">
+      <div class="label">
+        <div class="container">
+          <h2>Legendary university regatta</h2>
+          <ul>
+            <li>Teams from various european universities competing</li>
+            <li>Great test for french rowers two weeks before national university rowing championship</li>
+            <li>Party for all participants</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="schedule" class="page">
+        <h1>Provisional Schedule</h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info" id="callout-helper-context-color-specificity">
+              <h4>Saturday, May 5th – 1000m races</h4>
+              <ul>
+                <li>
+                  <span class="time">08:00</span><span class="event">Delegate meeting (Base, ergos hall)</span>
+                </li>
+              </ul>
+              <h5>Head of the river - 1000m – two buoy lanes</h5>
+              <ul>
+                <li>
+                  <span class="time">09:45</span><span class="event">Referees set-up (La Jonelière) </span>
+                </li>
+                <li>
+                  <span class="time">10:00 – 12:00</span><span class="event">Head races – qualifications 1000m</span>
+                </li>
+                <li>
+                  <span class="time">11:30 - 13:15</span><span class="event">Lunch (University Cafeteria)</span>
+                </li>
+                <li>
+                  <span class="time">12:30 - 12:45</span><span class="event">Referees meeting (Base, ergos hall) </span>
+                </li>
+              </ul>
+              <h5>Series - 1000m</h5>
+              <ul>
+                <li>
+                  <span class="time">13:00</span><span class="event">Referees set-up (La Jonelière)</span>
+                </li>
+                <li>
+                  <span class="time">13:15 – 15:00</span><span class="event">Series 1000 m</span>
+                </li>
+              </ul>
+              <h5>Finals - 1000m</h5>
+              <ul>
+                <li>
+                  <span class="time">15:00 – 16:00</span><span class="event">Ranking finals</span>
+                </li>
+                <li>
+                  <span class="time">16:00 – 17:00</span><span class="event">Finals
+                  5 to 8 - 1 to 4 </span>
+                </li>
+                <li>
+                  <span class="time">18:30 - 19:30</span><span                    class="event">City representatives reception (Base)</span>
+                </li>
+                <li>
+                  <span class="time">18:30 - 20:30</span>
+                  <span
+                    class="event">Diner (University Cafeteria)</span>
+                </li>
+                <li>
+                  <span class="time">20:30</span><span class="event">Gala Diner (Base, Erg hall)</span>
+                </li>
+              </ul>
+              <img src="images/gallery/plan_joneliere.png" width="100%" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Sunday, May 6th - 500m races</h4>
+              <ul>
+                <li><span class="time">09:00</span><span class="event">Delegates meeting (Base, ergo hall)</span></li>
+              </ul>
+              <h5>Series - line races - 500m</h5>
+              <ul>
+                <li><span class="time">09:45</span><span class="event">Referees set-up (Motte Rouge)</span></li>
+                <li><span class="time">10:30 – 12:00</span><span class="event">Series</span></li>
+              </ul>
+              <ul>
+                <li><span class="time">12:00 - 13:15</span><span class="event">Lunch (University Cafeteria)</span></li>
+                <li><span class="time"> 12:45 - 13:00</span><span class="event">Referees meeting (Base, salle ergo)</span></li>
+                <li><span class="time">13:00</span><span class="event">Referees set-up (Bassin de la Motte Rouge) </span></li>
+
+                <li><span class="time">13:15 – 13:45</span><span class="event">Repechages</span></li>
+                <li><span class="time">14:00 – 15:00</span><span class="event">Semi-finals</span></li>
+              </ul>
+              <h5>Finals - 500 m</h5>
+              <ul>
+                <li><span class="time">14:45 – 16:20</span><span
+                  class="event">Ranking finals</span></li>
+                <li><span class="time">16:20 – 17:00</span><span class="event">Finals 1 to 3 – 4 to 6</span></li>
+              </ul>
+              <img src="images/gallery/plan_motte_rouge.png" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info" id="callout-helper-context-color-specificity">
+              <h4>General information</h4>
+              <h5>Locations</h5>
+              <ul>
+                <li>La Jonelière : 1000m, sur 4 lignes d’eau</li>
+                <li>La Motte Rouge : 500m, sur 3 lignes d’eau</li>
+              </ul>
+              <h5>Boat parking</h5>
+              <ul>
+                <li>University base (Rue de la Houssinière)</li>
+                <li>La Jonelière Saturday afternoon</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info" id="callout-helper-context-color-specificity">
+              <h5>Serurity</h5>
+              <ul>
+                <li>Organisation and SNA</li>
+              </ul>
+              <h5>Reception</h5>
+              <ul>
+                <li>From Friday afternoon </li>
+                <li>University base (Rue de la Houssinière)</li>
+              </ul>
+              <h5>Awards</h5>
+              <ul>
+                <li>After each final</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-3 part">
+      <div class="label">
+        <div class="container">
+          <h2>Multiple events available</h2>
+          <h3>University/Colleges</h3>
+          <ul>
+            <li>Coxed eight (M8+ & W8+)</li>
+            <li>Quadruple scull (M4x & W4x)</li>
+          </ul>
+          <h3>Masters</h3>
+          <ul>
+            <li>Men Four (MM4+)</li>
+            <li>Women quadruple scull (MW4x)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div id="registration" class="page">
+        <h1>Regatta Registration</h1>
+        <p>Registration opens early 2018.</p>
+
+        <h1>Meals Booking</h1>
+        <p>
+          Meals offering is provided by our partner University Cafeteria. Booking is required and will be available after registration opening.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="part-4 part">
+      <div class="label"><div class="container">
+        <h2>Real championship events setup</h2>
+        <ul>
+          <li>Starting gates and buoy lanes installation</li>
+          <li>Federal referees invited</li>
+        </ul>
+      </div></div>
+    </div>
+
+
+    <div class="content">
+      <div id="contact" class="page">
+        <h1>Contact</h1>
+        <div>
+          <ol>
+            <li>Telephone: +33.9.54.01.48.10</li>
+            <li>Mail: <a href="mailto:contact@una-club.fr">contact@regataiades.fr</a></li>
+            <li>Addresse: 2 rue de la Houssinière 44300 Nantes</li>
+          </ol>
+        </div>
+        <div id="map-canvas"></div>
+
+      </div>
+    </div>
+
+
+    <div class="part-5 part">
+      <div class="label"><div class="container">
+        <h2>Stay Tuned</h2>
+        <ul>
+          <li>Fees and prices to be announced</li>
+          <li>Accomodation offers to be available</li>
+          <li>Registration opens in 2018</li>
+        </ul>
+        <div class="social">
+          <a class="new_window" href="https://www.facebook.com/Regataiades" title="Facebook Club Université Nantes Aviron (UNA)"><i class="fa fa-facebook-square fa-3"></i></a>
+          <a class="new_window" href="https://twitter.com/regataiades" title="Twitter du Club Université Nantes Aviron (UNA)"><i class="fa fa-twitter-square fa-3"></i></a>
+          <a class="new_window" rel="publisher&quot;" href="https://www.google.com/+RegataiadesFrNantes" title="Google+ Club Université Nantes Aviron (UNA)"><i class="fa fa-google-plus-square fa-3"></i></a>
+        </div>
+      </div></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    var gmap = {
+    active: false,
+    screenOnMap: false,
+    url: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDv9mOiinDWcfaVIH-kskvBvHCiutVnK64&',
+    analyseScrollPos: function () {
+        // if map canvas is found
+        var scrollPos = $(document).scrollTop().valueOf();
+        var pos = $('#map-canvas').offset().top - screen.height;
+        if (scrollPos >= pos && gmap.screenOnMap === false || scrollPos < pos && gmap.screenOnMap === true) {
+            gmap.screenOnMap = !gmap.screenOnMap;
+        }
+
+    },
+    callScript: function () {
+        window.loadGmap = function () {
+            gmap.load();
+        };
+        $.ajax({
+            url: gmap.url + 'callback=loadGmap',
+            dataType: 'script'
+        });
+    },
+    load: function () {
+        var draggable = null;
+        var latlng = new google.maps.LatLng(47.236516, -1.551113);
+
+        // manage drag for large / mobile devices
+        if (screen_width > 767) {
+            draggable = true;
+        }
+        else {
+            draggable = false;
+        }
+
+        // set map options
+        var mapOptions = {
+            zoom: 14,
+            center: latlng,
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            draggable: draggable,
+            scrollwheel: false
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        // marker configuration
+        var marker = new google.maps.Marker({
+            draggable: false,
+            position: latlng,
+            map: map,
+            title: app.app_name
+        });
+
+    },
+    scrollTreatment: function () {
+        gmap.analyseScrollPos();
+        if (gmap.screenOnMap === true && gmap.active === false) {
+            gmap.active = true;
+            gmap.callScript();
+        }
+    }
+};
+$(function () {
+
+    // load image depending on the screen size
+    if ($('#map-canvas').length) {
+        $(window).scroll(gmap.scrollTreatment);
+    }
+
+
+});
+    </script>
+</body></html>
