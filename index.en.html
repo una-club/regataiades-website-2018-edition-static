@@ -28,23 +28,26 @@
         background-image: url('images/bg-005.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 55%);
       }
 
-      .part-2 {
+      .part-mythical {
         background-image: url('images/pics/proc/mythical-2-03.png');
       }
-      .part-3 {
+      .part-registration {
         background-image: url('images/pics/proc/registration-01.png');
       }
-      .part-4 {
+      .part-hosting {
         background-image: url('images/pics/proc/hosting-02.png');
       }
-      .part-5 {
+      .part-volonteer {
+        background-image: url('images/pics/proc/volonteer-01.png');
+      }
+      .part-sponsorship {
+        background-image: url('images/pics/proc/sponsorship-01.png');
+      }
+      .part-end {
         background-image: url('images/pics/proc/end-02.png');
       }
       .top-content,
-      .part-2,
-      .part-3,
-      .part-4,
-      .part-5 {
+      .part {
         background-repeat: no-repeat;
         background-position:  center center;
         background-attachment: fixed;
@@ -63,10 +66,7 @@
         flex-direction: column;
         justify-content: flex-start;
       }
-      .part-2,
-      .part-3,
-      .part-4,
-      .part-5 {
+      .part {
         align-items: center;
         align-content: center;
         flex-direction: column;
@@ -95,28 +95,41 @@
         border-bottom: rgba(230, 255, 255, 1) solid 1px;
       }
 
-      .part-2 .label {
+      .part-mythical .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(255, 255, 255, 0.9);
         border-top: rgba(241, 161, 88, 1) solid 1px;
         border-bottom: rgba(241, 161, 88, 1) solid 1px;
       }
 
-      .part-3 .label {
+      .part-registration .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(202, 207, 218, 0.9);
         border-top: rgba(0, 0, 0, 1) solid 1px;
         border-bottom: rgba(0, 0, 0, 1) solid 1px;
       }
 
-      .part-4 .label {
+      .part-hosting .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(186, 216, 185, 0.9);
         border-top: rgba(81, 133, 77, 1) solid 1px;
         border-bottom: rgba(81, 133, 77, 1) solid 1px;
       }
+      .part-sponsorship .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(176, 178, 113, 0.9);
+        border-top: rgba(137, 109, 70, 1) solid 1px;
+        border-bottom: rgba(137, 109, 70, 1) solid 1px;
+      }
 
-      .part-5 .label {
+      .part-volonteer .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(189, 186, 198, 0.9);
+        border-top: rgba(119, 122, 98, 1) solid 1px;
+        border-bottom: rgba(137, 109, 70, 1) solid 1px;
+      }
+
+      .part-end .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(219, 233, 230, 0.9);
         border-top: rgba(0, 134, 0, 1) solid 1px;
@@ -266,26 +279,32 @@
         .top-content {
           background-image: url('images/bg-005-mob.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(211, 255, 255, 1) 55%);
         }
-        .part-2 {
+        .part-mythical {
           background-image: url('images/pics/proc/mythical-2-03-mob.png');
         }
-        .part-3 {
+        .part-registration {
           background-image: url('images/pics/proc/registration-01-mob.png');
         }
-        .part-4 {
+        .part-hosting {
           background-image: url('images/pics/proc/hosting-02-mob.png');
         }
-        .part-5 {
+        .part-volonteer {
+          background-image: url('images/pics/proc/volonteer-01-mob.png');
+        }
+        .part-sponsorship {
+          background-image: url('images/pics/proc/sponsorship-01-mob.png');
+        }
+        .part-end {
           background-image: url('images/pics/proc/end-02-mob.png');
         }
         .top-content{
           background-position:  center top;
           background-attachment: scroll;
         }
-        .part-2,
-        .part-3,
-        .part-4,
-        .part-5 {
+        .part-mythical,
+        .part-registration,
+        .part-hosting,
+        .part-end {
           background-position:  center 0px;
           background-attachment: scroll;
         }
@@ -295,10 +314,10 @@
           flex-direction: column;
           justify-content: flex-end;
         }
-        .part-2,
-        .part-3,
-        .part-4,
-        .part-5 {
+        .part-mythical,
+        .part-registration,
+        .part-hosting,
+        .part-end {
           align-items: center;
           align-content: center;
           flex-direction: column;
@@ -349,6 +368,8 @@
           <!--<li><a href="#teams">Equipes engagées</a></li>-->
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#registration">Registration</a></li>
+          <li><a href="#partnership">Partnership</a></li>
+          <li><a href="#volonteer">Volonteers</a></li>
           <li><a href="#contact">Contact</a></li>
       </div>
       <div class="label"><h1>International University Rowing Regatta </h1><h2>XXXIV Edition</h2><h3>Nantes, May 5 and 6, 2018</h3></div>
@@ -358,6 +379,29 @@
     <div class="content">
       <div id="regatta" class="page">
         <h1>Presentation</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Quality hosting</h4>
+              <p>Organized since 1982 by the biggest university rowing club in France, <a href="http://una-club.fr" target="_blank">Université Nantes Aviron</a> .</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Reception</h4>
+              <p>Starting from Friday, May 4th.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Transport and accomodation</h4>
+              <p>The discount rates are available at the <a href="https://www.google.com/maps/place/hotelF1+Nantes+Est+Porte+de+Saint+Luce/@47.2449872,-1.5134397,15z/data=!4m5!3m4!1s0x0:0x8b2fae8e75a5b013!8m2!3d47.2465604!4d-1.5018955">local F1 hotel</a>. For more information and booking you can call Pacome Becerro from F1 Hotel at +33(0)6.25.80.32.04.</p>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <h4>Races</h4>
@@ -382,21 +426,6 @@
           </div>
         </div>
         <div class="row">
-
-          <div class="col-md-4">
-            <div class="bs-callout bs-callout-info"
-              id="callout-helper-context-color-specificity">
-              <h4>Reception</h4>
-              <p>Starting from Friday, May 4th.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="bs-callout bs-callout-info"
-              id="callout-helper-context-color-specificity">
-              <h4>Transport and accomodation</h4>
-              <p>We are working on special offers with our partners. Stay tuned.</p>
-            </div>
-          </div>
           <div class="col-md-4">
             <div class="bs-callout bs-callout-info"
               id="callout-helper-context-color-specificity">
@@ -404,8 +433,6 @@
               <p>Please plan to provide your own boats and related gear. If that is truly impractical, please contact us.  We'll do our best to help find a solution.</p>
             </div>
           </div>
-        </div>
-        <div class="row">
             <div class="col-md-4">
               <div class="bs-callout bs-callout-info"
                 id="callout-helper-context-color-specificity">
@@ -418,7 +445,7 @@
               id="callout-helper-context-color-specificity">
               <h4>Food</h4>
               <p>Our catering partner will offer lunches on Saturday and Sunday as well as dinner on Saturday.</p>
-              <p>Pricing and booking will be available soon</p>
+              <p>All meals at the same price: 10E per meal per person.</p>
             </div>
           </div>
         </div>
@@ -426,7 +453,7 @@
     </div>
 
 
-    <div class="part-2 part">
+    <div class="part-mythical part">
       <div class="label">
         <div class="container">
           <h2>Legendary university regatta</h2>
@@ -566,7 +593,7 @@
         </div>
       </div>
     </div>
-    <div class="part-3 part">
+    <div class="part-registration part">
       <div class="label">
         <div class="container">
           <h2>Multiple events</h2>
@@ -598,7 +625,7 @@
     </div>
 
 
-    <div class="part-4 part">
+    <div class="part-hosting part">
       <div class="label"><div class="container">
         <h2>Real championship events setup</h2>
         <ul>
@@ -608,16 +635,174 @@
       </div></div>
     </div>
 
+    <div class="content">
+      <div id="partnership" class="page">
+        <h1>Partnership</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Strong values</h4>
+              <p>The Régataïades is a historical university rowing regatta. Since almost 40 years it promotes the values of cohesion, of team spirit, of success to the youth and college students.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Visibility</h4>
+              <p>The partnership with Regataiades is an opportunity to improve regional visibility as well as make you known amongst students in european colleges and universities.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Social footpring </h4>
+              <p>The collaboration with the Régataïades is not only an adherence to the regatta's values but also a chance to contribute to the development of the youth and the sport.</p>
+            </div>
+          </div>
+        </div>
+        <h2>Multiple options</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Bronze</h4>
+              <ul>
+                <li>Website and event visibility</li>
+                <li>Social network visibility via dedicated event pages</li>
+              </ul>
+              <img src="./images/icons/medal-bronze.png" width="64px" class="medal-img">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Silver</h4>
+              <ul>
+                <li>Bronze options +</li>
+                <li>Your logos on the special edition of the event gear offering the visibility beyond the event</li>
+                <li>Your banners on site</li>
+              </ul>
+              <img src="./images/icons/medal-silver.png" width="64px" class="medal-img">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Gold</h4>
+              <ul>
+                <li>Gold options +</li>
+                <li>Your booth on site</li>
+                <li>Your goodies for the medalists</li>
+              </ul>
+              <img src="./images/icons/medal-gold.png" width="64px" class="medal-img">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Administrative simplicity</h4>
+              <p>For the french taxpaying companies the financial contributions may be considered as donation giving right to the tax discount.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Collaboration flexibility</h4>
+              <p>We wish to create sustainable collaboration so we are open to all the ideas going beyond the initial offers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="part-sponsorship part">
+      <div class="label"><div class="container">
+        <h2>Une visibilité internationale</h2>
+        <ul>
+          <li>Invitation des médias régionaux et nationaux</li>
+          <li>Bouche à l'oreille dans les mondes d'aviron et d'étudiants</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="content">
+      <div id="volonteer" class="page">
+        <h1>Volonteers</h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Information and hosting</h4>
+              <p>The boathouse opens Friday night and will remain open until Sunday. Hosts will welcome teams and will provide inforormation to all the participants. </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>On water security</h4>
+              <p>On water security is crucial and a dedicated team will be working Saturday and Sunday. Designated drivers will assist referees during the races as well as regulate traffic (boat driver licence is reauired). Dockmasters will take in charge the docks traffic.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Transport and logistics</h4>
+              <p>To make the regata run smoothly, shuttles will provide rides from the boathouse to the race course area. Drivers are needed for the shuttles for during the regatta Saturday and Sunday.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Food court</h4>
+              <p>During the whole weekend a food court will be open prividing traditional local meals such as crepes and galettes. You have a chance to contribute by cooking and selling the meals to the participants and spectators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="part-volonteer part">
+      <div class="label"><div class="container">
+        <h2>Sport event available to everyone</h2>
+        <ul>
+          <li>Several volonteering opprtunities</li>
+          <li>Postitions for various skills</li>
+        </ul>
+      </div></div>
+    </div>
+
 
     <div class="content">
       <div id="contact" class="page">
         <h1>Contact</h1>
-        <div>
-          <ol>
-            <li>Telephone: +33.9.54.01.48.10</li>
-            <li>Mail: <a href="mailto:contact@una-club.fr">contact@regataiades.fr</a></li>
-            <li>Addresse: 2 rue de la Houssinière 44300 Nantes</li>
-          </ol>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <p>For more information about the event, the venue, partnership or volonteer opportunities, please contact us.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <ul>
+                <li>Téléphone : 09.54.01.48.10</li>
+                <li><a href="https://www.facebook.com/Regataiades">Facebook</a></li>
+                <li>Courriel : <a href="mailto:contact@regataiades.fr">contact@regataiades.fr</a></li>
+                <li>Adresse postale : 2 rue de la Houssinière 44300 Nantes</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div id="map-canvas"></div>
 
@@ -625,7 +810,7 @@
     </div>
 
 
-    <div class="part-5 part">
+    <div class="part-end part">
       <div class="label"><div class="container">
         <h2>Stay Tuned</h2>
         <ul>

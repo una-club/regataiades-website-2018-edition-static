@@ -27,23 +27,26 @@
         background-image: url('images/bg-005.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 55%);
       }
 
-      .part-2 {
+      .part-mythical {
         background-image: url('images/pics/proc/mythical-2-03.png');
       }
-      .part-3 {
+      .part-registration {
         background-image: url('images/pics/proc/registration-01.png');
       }
-      .part-4 {
+      .part-hosting {
         background-image: url('images/pics/proc/hosting-02.png');
       }
-      .part-5 {
+      .part-volonteer {
+        background-image: url('images/pics/proc/volonteer-01.png');
+      }
+      .part-sponsorship {
+        background-image: url('images/pics/proc/sponsorship-01.png');
+      }
+      .part-end {
         background-image: url('images/pics/proc/end-02.png');
       }
       .top-content,
-      .part-2,
-      .part-3,
-      .part-4,
-      .part-5 {
+      .part {
         background-repeat: no-repeat;
         background-position:  center center;
         background-attachment: fixed;
@@ -62,10 +65,7 @@
         flex-direction: column;
         justify-content: flex-start;
       }
-      .part-2,
-      .part-3,
-      .part-4,
-      .part-5 {
+      .part {
         align-items: center;
         align-content: center;
         flex-direction: column;
@@ -94,28 +94,42 @@
         border-bottom: rgba(230, 255, 255, 1) solid 1px;
       }
 
-      .part-2 .label {
+      .part-mythical .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(255, 255, 255, 0.9);
         border-top: rgba(241, 161, 88, 1) solid 1px;
         border-bottom: rgba(241, 161, 88, 1) solid 1px;
       }
 
-      .part-3 .label {
+      .part-registration .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(202, 207, 218, 0.9);
         border-top: rgba(0, 0, 0, 1) solid 1px;
         border-bottom: rgba(0, 0, 0, 1) solid 1px;
       }
 
-      .part-4 .label {
+      .part-hosting .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(186, 216, 185, 0.9);
         border-top: rgba(81, 133, 77, 1) solid 1px;
         border-bottom: rgba(81, 133, 77, 1) solid 1px;
       }
 
-      .part-5 .label {
+      .part-sponsorship .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(176, 178, 113, 0.9);
+        border-top: rgba(137, 109, 70, 1) solid 1px;
+        border-bottom: rgba(137, 109, 70, 1) solid 1px;
+      }
+
+      .part-volonteer .label {
+        color:rgba(0, 0, 0, 1);
+        background: rgba(189, 186, 198, 0.9);
+        border-top: rgba(119, 122, 98, 1) solid 1px;
+        border-bottom: rgba(137, 109, 70, 1) solid 1px;
+      }
+
+      .part-end .label {
         color:rgba(0, 0, 0, 1);
         background: rgba(219, 233, 230, 0.9);
         border-top: rgba(0, 134, 0, 1) solid 1px;
@@ -238,6 +252,12 @@
         margin-top: 40px;
         text-align: center;
       }
+      .medal-img{
+        width:64px;
+        text-align: center;
+        margin: 0px auto;
+        display: block;
+      }
       @media only screen and (max-width: 500px) {
         .header-img img {
           width: 250px;
@@ -265,26 +285,34 @@
         .top-content {
           background-image: url('images/bg-005-mob.png'), linear-gradient(to bottom, rgba(211, 255, 255, 1) 0%, rgba(211, 255, 255, 1) 55%);
         }
-        .part-2 {
+        .part-mythical {
           background-image: url('images/pics/proc/mythical-2-03-mob.png');
         }
-        .part-3 {
+        .part-registration {
           background-image: url('images/pics/proc/registration-01-mob.png');
         }
-        .part-4 {
+        .part-hosting {
           background-image: url('images/pics/proc/hosting-02-mob.png');
         }
-        .part-5 {
+        .part-volonteer {
+          background-image: url('images/pics/proc/volonteer-01-mob.png');
+        }
+        .part-sponsorship {
+          background-image: url('images/pics/proc/sponsorship-01-mob.png');
+        }
+        .part-end {
           background-image: url('images/pics/proc/end-02-mob.png');
         }
         .top-content{
           background-position:  center top;
           background-attachment: scroll;
         }
-        .part-2,
-        .part-3,
-        .part-4,
-        .part-5 {
+        .part-mythical,
+        .part-registration,
+        .part-hosting,
+        .part-volonteer,
+        .part-sponsorship,
+        .part-end {
           background-position:  center 0px;
           background-attachment: scroll;
         }
@@ -294,10 +322,12 @@
           flex-direction: column;
           justify-content: flex-end;
         }
-        .part-2,
-        .part-3,
-        .part-4,
-        .part-5 {
+        .part-mythical,
+        .part-registration,
+        .part-hosting,
+        .part-volonteer,
+        .part-sponsorship,
+        .part-end {
           align-items: center;
           align-content: center;
           flex-direction: column;
@@ -333,6 +363,7 @@
           padding-bottom: 20px;
         }
       }
+
     </style>
   </head>
   <body>
@@ -348,6 +379,8 @@
           <!--<li><a href="#teams">Equipes engagées</a></li>-->
           <li><a href="#schedule">Programme</a></li>
           <li><a href="#registration">Inscription</a></li>
+          <li><a href="#partnership">Partenariat</a></li>
+          <li><a href="#volonteer">Bénévolat</a></li>
           <li><a href="#contact">Contact</a></li>
       </div>
       <div class="label"><h1>Régate Universitaire Internationale d'Aviron</h1><h2>XXXIV Edition</h2><h3>Nantes, 5 et 6 Mai 2018</h3></div>
@@ -357,6 +390,30 @@
     <div class="content">
       <div id="regatta" class="page">
         <h1>Présentation</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Organisation de qualité</h4>
+              <p>Organisé depuis 1982 par le plus grand club d'aviron universitaire en France, <a href="http://una-club.fr" target="_blank">Université Nantes Aviron</a> .</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Accueil des équipes</h4>
+              <p>Arrivée des équipes à partir du vendredi 4 mai 2018 à 18h00
+                au club.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Transport et hébergement</h4>
+              <p>Les reductions sont disponibles à <a href="https://www.google.com/maps/place/hotelF1+Nantes+Est+Porte+de+Saint+Luce/@47.2449872,-1.5134397,15z/data=!4m5!3m4!1s0x0:0x8b2fae8e75a5b013!8m2!3d47.2465604!4d-1.5018955">l'hotel F1 à proximité</a>. Plus plus d'informations contactez Pacome Becerro de F1 Hotel sur +33(0)6.25.80.32.04.</p>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <h4>Epreuves</h4>
@@ -381,22 +438,6 @@
           </div>
         </div>
         <div class="row">
-
-          <div class="col-md-4">
-            <div class="bs-callout bs-callout-info"
-              id="callout-helper-context-color-specificity">
-              <h4>Accueil des équipes</h4>
-              <p>Arrivée des équipes à partir du vendredi 4 mai 2018 à 18h00
-                au club.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="bs-callout bs-callout-info"
-              id="callout-helper-context-color-specificity">
-              <h4>Transport et hébergement</h4>
-              <p>Nous travaillons actuellement sur des offres d'hébergement avec nos partenaires. Restez connectez.</p>
-            </div>
-          </div>
           <div class="col-md-4">
             <div class="bs-callout bs-callout-info"
               id="callout-helper-context-color-specificity">
@@ -404,8 +445,6 @@
               <p>En cas de difficulté majeure vous pouvez nous contacter pour étudier les possibilités de location. Les demandes seront traitées au cas par cas.</p>
             </div>
           </div>
-        </div>
-        <div class="row">
             <div class="col-md-4">
               <div class="bs-callout bs-callout-info"
                 id="callout-helper-context-color-specificity">
@@ -418,7 +457,7 @@
               id="callout-helper-context-color-specificity">
               <h4>Réservation repas</h4>
               <p>Notre partenaire, Restaurant Universitaire propose des repas le samedi midi, samedi soir et dimanche midi.</p>
-              <p>Le prix et les reservations seront disponibles prochainement.</p>
+              <p>Tous les repas sont au même prix : 10E par repas par personne</p>
             </div>
           </div>
         </div>
@@ -426,7 +465,7 @@
     </div>
 
 
-    <div class="part-2 part">
+    <div class="part-mythical part">
       <div class="label">
         <div class="container">
           <h2>Une régate étudiante mythique</h2>
@@ -569,7 +608,7 @@
     </div>
 
 
-    <div class="part-3 part">
+    <div class="part-registration part">
       <div class="label">
         <div class="container">
           <h2>Plusieurs catégories d'embarcations</h2>
@@ -601,7 +640,7 @@
     </div>
 
 
-    <div class="part-4 part">
+    <div class="part-hosting part">
       <div class="label"><div class="container">
         <h2>Déroulement des epreuves dans les conditions du
           championnat</h2>
@@ -613,28 +652,185 @@
       </div></div>
     </div>
 
+    <div class="content">
+      <div id="partnership" class="page">
+        <h1>Partenariat</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Des valeurs fortes</h4>
+              <p>Les Régataïades c'est une régate d'aviron étudiante historique. Depuis presque 40 ans elle conduit les valeurs de cohésion, d'esprit d'équipe, de réussite chez la jeunesse et les étudiants.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Une reconnaissance dans le milieu</h4>
+              <p>Le partenariat avec les Régataïades c'est une opportunité de s'offrir une visibilité régionale ainsi que parmi les étudiants des grandes écoles et des universités européennes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Une empreinte sociale</h4>
+              <p>La collaboration avec les Régataïades c'est une occasion de contribuer non seulement aux valeurs de la régate, mais également au développement de la jeunesse et sport.</p>
+            </div>
+          </div>
+        </div>
+        <h2>Plusieurs collaborations disponibles</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Bronze</h4>
+              <ul>
+                <li>Visibilité sur le site Internet et sur l'affiche de l'événement</li>
+                <li>Visibilité sur les réseaux sociaux via les pages de l'événement dédiées</li>
+              </ul>
+              <img src="./images/icons/medal-bronze.png" width="64px" class="medal-img">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Argent</h4>
+              <ul>
+                <li>Toutes les options Bronze +</li>
+                <li>Impression des logos sur l'édition spéciale de tenues sportives offrant une visibilité en dehors de l'événement</li>
+                <li>Affichage de vos banderoles sur le site</li>
+              </ul>
+              <img src="./images/icons/medal-silver.png" width="64px" class="medal-img">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Or</h4>
+              <ul>
+                <li>Toutes les options Argent plus</li>
+                <li>D'avantage de visibilité sur l'événement avec une possibilité de tenir un stand sur le site</li>
+                <li>Distribution de vos goodies aux vainqueurs</li>
+              </ul>
+              <img src="./images/icons/medal-gold.png" width="64px" class="medal-img">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Simplicité administrative</h4>
+              <p>Les contributions financières peuveunt être considérées comme un don à l'association et par conséquence déductibles de vos impôts.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Souplesse de collaboration</h4>
+              <p>Nous souhaitons créer une collaboration durable et restons toujours ouverts à des projets allant au-delà des offres initiales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part-sponsorship part">
+      <div class="label"><div class="container">
+        <h2>Une visibilité internationale</h2>
+        <ul>
+          <li>Invitation des médias régionaux et nationaux</li>
+          <li>Bouche à l'oreille dans les mondes d'aviron et d'étudiants</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="content">
+      <div id="volonteer" class="page">
+        <h1>Bénévolat</h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Accueil à la base</h4>
+                <p>La base UNA ouvrira ses portes dès vendredi soir et la base restera ouverte jusqu'au dimanche. Les hôtes se chargeront de l'accueil des équipages ainsi que de distribution et de transfert d'informations. La capacité de parler anglais est un atout.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Sécurité sur l'eau </h4>
+              <p>Toute la journée samedi et dimanche la sécurité sur l'eau sera assurée. Les pilotes assisteront les arbitres pendant les courses ainsi que de régulariseront la navigation tout le long de l'événement (le permis bateau est nécessaire pour cette tâche). Ceux qui n'ont pas de permis pourront s'occuper de la sécurité sur les pontons.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Transport et logistique</h4>
+              <p>Pour assurer le meilleur déroulement de la régate, les navettes seront mise en place dès vendredi. Pendant la régate les chauffeurs conduiront les véhicules entre la base nautique et le bassin. Avant et après la régate les chauffeurs s'occuperont du transport de certains équipages.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <h4>Stand de restauration</h4>
+              <p>Pendant tout le week-end le stand de restauration sera ouvert à toutes et à tous. Vous allez pouvoir participer à la préparation et à la vente des crêpes et des galettes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="part-volonteer part">
+      <div class="label"><div class="container">
+        <h2>Evénement sportif à la portée de tous</h2>
+        <ul>
+          <li>Plusieurs opportunités de bénévolat</li>
+          <li>Des rôles pour toutes les compétences</li>
+        </ul>
+      </div></div>
+    </div>
+
 
     <div class="content">
       <div id="contact" class="page">
         <h1>Contact</h1>
-        <div>
-          <ol>
-            <li>Téléphone : 09.54.01.48.10</li>
-            <li>Courriel : <a href="mailto:contact@una-club.fr">contact@regataiades.fr</a></li>
-            <li>Adresse postale : 2 rue de la Houssinière 44300 Nantes</li>
-          </ol>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <p>Pour tous les renseignements sur la régate, le partenariat et le bénévolat n'hésitez pas à nous contacter.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bs-callout bs-callout-info"
+              id="callout-helper-context-color-specificity">
+              <ul>
+                <li>Téléphone : 09.54.01.48.10</li>
+                <li><a href="https://www.facebook.com/Regataiades">Facebook</a></li>
+                <li>Courriel : <a href="mailto:contact@regataiades.fr">contact@regataiades.fr</a></li>
+                <li>Adresse postale : 2 rue de la Houssinière 44300 Nantes</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
         <div id="map-canvas"></div>
 
       </div>
     </div>
 
-
-    <div class="part-5 part">
+    <div class="part-end part">
       <div class="label"><div class="container">
         <h2>Restez connectés</h2>
         <ul>
-          <li>Informations tarifaires à venir</li>
+          <li>Plus d'nformations à venir</li>
           <li>Les offres partenaires d'hébergement à découvrir</li>
           <li>Ouverture des incriptions en 2018</li>
         </ul>
