@@ -346,6 +346,10 @@ h1 {
   }
 }
 
+li.live a {
+  color: #ff0000 !important;
+}
+
 #partnership-info .col-md-3,
 #partnership-info .col-md-4,
 #partnership-info .col-md-6 {
